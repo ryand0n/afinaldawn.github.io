@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Heart Disease Prediction</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -20,16 +20,17 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/ai_camp_logo.png" alt="..." height='200'/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#introduction">Pre-Processing</a></li>
                         <li class="nav-item"><a class="nav-link" href="#visualizations">Visualizations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#conclusion">Results and Conclusion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusion">Results/Conclusion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusion">Significance</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -39,17 +40,16 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Models!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#Introduction">Tell Me More</a>
+                <div class="masthead-subheading">The Electric Pythons</div>
+                <div class="masthead-heading text-uppercase">Heart Disease AI</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#introduction">Learn More</a>
             </div>
         </header>
         <!-- Services-->
         <section class="page-section" id="introduction">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Introduction</h2>
-                    <h3 class="section-subheading text-muted">Why are we doing this?</h3>
+                    <h2 class="section-heading text-uppercase">Pre-Processing</h2>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -73,7 +73,7 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-check-circle fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Our steps</h4>
+                        <h4 class="my-3">Our Steps</h4>
                         <p class="text-muted"> So, to help avoid the possibility of inaccurate predictions, we removed data that fell below the first quartile of that particular variable, and any data that exceeded the third quartile to remove any outliers. Standard scaling was also introduced to control the distribution of data so that it had a standard deviation of one. From this data conclusions could be drawn about what typical states of the body would most likely lead to the possibility of contracting this disease.</p>
                     </div>
                   
@@ -94,26 +94,43 @@
           </style>
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Visualizations</h2>
-                    <h3 class="section-subheading text-muted">Graphs</h3>
+                    <h1 class="section-heading text-uppercase">Visualizations</h1>
+                    <h2 class="section-subheading text-muted">Graphs</h2>
+                  <br>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                
+                    <div>
                         <!-- Histogram Matrix-->
                         <div class="portfolio-item">
 
                                 <div class="portfolio-hover">
 
                                 </div>
-                                <img class="img-fluid" src="Histofig.jpg" height = 800 width = 100% alt="..." />
+                              <div class="portfolio-caption-heading">
+                                <h6>
+                                    Histogram Grid of Factors in Heart Disease
+                                </h6>
+                              
+                          
+                          </div>
+<!--                           <iframe src="" height = "500" width = "500" frameBorder = 0></iframe> -->
+                                <img class="img-fluid" src="assets/img/Histofig.jpg" height = "500" width = "1000" alt="..." />
+                          
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Histogram Grid of Factors in Heart Disease</div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
+                                <p>
+
+                                In our data, the histogram for thalach, which is the person's maximum heart rate achieved, seems to show that a thalach level of 150 differentiates a person with heart disease and a person without it. <br>
+For oldpeak, there is a spike of people with heart disease when their oldpeak level is 0. As oldpeak level increases, the amount of people with heart disease drastically decreases in a negative association. <br>
+For our age histogram, the data shows that people in their early forties and fifties have the highest frequency of heart disease, with a bimodal peak. <br>
+The sex histogram shows that females are at a greater risk of contracting heart disease compared to men. Despite there being a lower sample number in the dataset, the amount of females affected are almost as high as men. <br>
+Our ca histogram shows that people with 0 major vessels infected are at the highest risk of getting heart disease.<br>
+Our slope histogram shows that at a slope of level 2, there is a high amount of people with heart disease. <br>
+                                  There is also a positive association in which as slope level increase, so do the amount of people that have heart disease. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div>
                         <!-- Scatterplot Matrix-->
                         <div class="portfolio-item">
                             
@@ -122,36 +139,68 @@
   <div class="portfolio-hover">
                             
                                 </div>
-                          <iframe src="ScatterplotsVisualizations.html" height = '1000' width = '1000' frameBorder = 0></iframe>
+                          <div class="portfolio-caption-heading">
+                            <h6>
+                              
+                    
+                            Scatterplot Matrix of Correlations
+                            </h6>
+                          </div>
+                          <iframe src="assets/img/ml_models/ScatterplotsVisualizations.html" height = '500' width = '100%' frameBorder = 0></iframe>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Scatterplot Matrix of Correlations</div>
+                              <div class="portfolio-caption-heading">
+                                <p>
+                                  We used a matrix scatter plot to compare variables we thought were most directly correlated to changes in heart disease. We colored the graphs to differentiate between people who did (yellow) and did not (blue) have heart disease. The age and thalach appear to have a negative correlation to each other; age is mostly spread out, but those with higher heart rates tend to have heart disease. The old peak and age do not have much correlation, people with heart disease tend to have lower old peak measurements. The thalach and old peak do not have much correlation, people with heart disease tend to have lower old peak measurements.
+                                </p>
+                              </div>
+                      
                                 <div class="portfolio-caption-subheading text-muted" width="200" height="200"></div>
+                              <br>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div>
                         <!-- Heatmap-->
-                        <div class="portfolio-item">
-                         
+                        
+                         <div class="portfolio-item">
                                 <div class="portfolio-hover">
    
                                 </div>
-      <iframe src = "Heatmap.html" height = '1000' width = '1000' frameBorder = 0>
-        
-      </iframe>
-                                        
+      
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Heatmap Correlation of Factors in Heart Disease</div>
-                                <div class="portfolio-caption-subheading text-muted" </div>
+                                <div class="portfolio-caption-heading">
+                                  
+                                  <h6>
+                                    Heatmap Correlation of Factors in Heart Disease
+                                  </h6>
+                              
+                              </div>
+                              <iframe src = "assets/img/ml_models/Heatmap.html" height = '500' width = '1000' frameBorder = 0>
+        
+      </iframe> 
+                              <div class="portfolio-caption">
+                               <div class="portfolio-caption-heading">
+                             <p>
+                               
+                                 
+                                  The reason we're using a heatmap made by Plotly to portray the factors of heart disease is because it displays the data in an easy-to-digest way. The color scale tells a reader what factors are correlated with each other and with heart disease, making it easier to find what the problem is. Our goal is to spread awareness about heart disease and help people identify if they may be at a higher risk for heart disease, and understanding the factors and correlations are one step to do that. The most important column to look at is the last one as it indicates the correlation between heart disease and other factors such as chest pain. The closer the number is to 1 or -1, the higher positive or negative correlation between the variables.
+The most positively correlated variables to people with heart disease are chest pain, thalach (max heart rate), and slope of peak exercise in ST segments. This shows that chest pain can be a sign of heart disease, and heart rate and exercise also play a big part. The most negatively correlated variables to people with heart disease are ST depression and the number of major vessels colored by flouroscopy. Some variables that should be disregarded are thalassemia, sex, and exercise induced angina because of their fixed numerical representations (e.g. male = 1 and female = 0 ) that do not translate well on a graph/heat map when compared with other values. 
+                                 </p>
+                                 <br>
+                             </div>
+                              </div>
+                      </div>
+                                <div class="portfolio-caption-subheading text-muted">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div>
                       <div class="container">
                 <div class="text-center">
-                    <h3 class="section-subheading text-muted">Machine Learning Confusion Matrices</h3>
+                    <h2 class="section-subheading text-muted">Machine Learning Confusion Matrices</h2>
+                  <br>
                 </div>
                         <!-- Extreme Gradient Boosting-->
                         <div class="portfolio-item">
@@ -163,15 +212,43 @@
                             </a>
                             <div class="portfolio-caption">
                                 <h6>Extreme Gradient Boosting</h6>
-                                <div class="portfolio-caption-subheading text-muted">Our best model, Extreme Gradient Boosting, or EGB, is a supervised machine learning program that combines many other models, often times weaker models, into its own highly accurate model. EGB is similar to random forest and decision tree models, in the way that each of the models making up EGB makes 1 big tree 
-model with thousands of trees. EGB converts all categorical data into one\-hot encoding, which
-basically means it prepares the data for the algorithm by assigning the categories 1s and 0s.</div>
-                               <iframe src="xgb_cm.html" height = 500 width = 500> </iframe>
+                                <p>Our best model, Extreme Gradient Boosting, or EGB, is a supervised machine learning program that combines many other models, often times weaker models, into its own highly accurate model. EGB is similar to random forest and decision tree models, in the way that each of the models making up EGB makes 1 big tree model with thousands of trees. EGB converts all categorical data into one-hot encoding, which basically means it prepares the data for the algorithm by assigning the categories 1s and 0s.</p>
+                              <img src = "assets/img/ml_models/xgb_ex_vis.png" height = 250 width = 650>
+                              <br>
+                              <a href = "https://towardsdatascience.com/xgboost-extreme-gradient-boosting-how-to-improve-on-regular-gradient-boosting-5c6acf66c70a">Source: Towards Data Science</a>
+                              <p>
+                                Results: Extreme Data Boosting performed extremely well with a recall score of approximately 0.972. This indicates that the model had predicted 3 false negatives out of a total of 108 true positive and false negative values. Based on the confusion matrix, you can also see that the model returned no false positives, and while that is impressive, it doesn't affect the recall score so isn't very useful in this case.
+                                <iframe src="assets/img/ml_models/xgb_cm.html" height = 500 width = 500> </iframe>
+                              </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- K Nearest Neighbor-->
+  <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"></div>
+  <!-- Random Forest Classifier-->
+                        <div class="portfolio-item">
+        
+                                <div class="portfolio-hover">
+
+                                </div>
+                                <br>
+                          
+
+                            </a>
+                            <div class="portfolio-caption">
+                                <h6>Random Forest Classifier</h6>
+                                <p>Our second best model, the Random Forest Classifier, is a machine learning algorithm that is a meta estimator. The algorithm takes a certain number of decision tree classifiers that operate as an ensemble, onto various sub-samples of the data set. Each individual decision tree classifier results in a class prediction, and uses the mean of the results to determine and improve predictive accuracy. The class predictions that occurred the most times becomes the overall prediction for the model.</p>
+                              <img src = "https://upload.wikimedia.org/wikipedia/commons/7/76/Random_forest_diagram_complete.png">
+                              <br>
+                              <a href = "https://commons.wikimedia.org/wiki/File:Random_forest_diagram_complete.png">Source: Wikimedia</a>
+                              
+                              <p>
+                                Results: The Random Forest Classifier algorithm performed moderately well with a recall score of 0.935. This indicates it identified results truly positive or negative, whether people had heart disease or not, correctly. As seen in the confusion matrix, there were only 6 false positives and 0 false negatives, which is ideal. False negatives are particularly dangerous in medicine since they may increase or fail to decrease a person's    
+                              </p>
+                              <iframe src = "assets/img/ml_models/rfc_fig2.html" height = 500 width = 500>
+                              </iframe>
+</div>
+                        </div>                      
+  <!-- K Nearest Neighbor-->
                         <div class="portfolio-item">
                           
                                 <div class="portfolio-hover">
@@ -183,38 +260,27 @@ basically means it prepares the data for the algorithm by assigning the categori
                             </a>
                             <div class="portfolio-caption">
                                 <h6>K Nearest Neighbor</h6>
-                                <div class="portfolio-caption-subheading text-muted">Our second best model, K-Nearest Neighbor, is a supervised machine learning algorithm that can be used for classification and regression problems. When a data point is given to the algorithm, it then calculates the distance between the given point to the other data points, mostly using Euclidian distance. The nearest “neighbors'' or data points to the given data point are then sorted by distance in increasing order. The data point is then classified among its “k” nearest neighbors. A small “k” value is more accurate but causes overfitting.</div>
-                              <iframe src="KNNfile.html" height = 500 width = 500>
+                                <p>Our third best model, K-Nearest Neighbor, is a supervised machine learning algorithm that can be used for classification and regression problems. When a data point is given to the algorithm, it then calculates the distance between the given point to the other data points, mostly using Euclidian distance. The nearest “neighbors" or data points to the given data point are then sorted by distance in increasing order. The data points are in either category a or b, and depending on how many are measured in each category, the majority will win and the data point being predicted will be assigned to category with the majority. The k value determines how many neighbors will be used to sort.<p>
+                              <img src = "http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1531424125/KNN_final_a1mrv9.png">
+                              <br>
+                              <a href = "https://www.datacamp.com/tutorial/k-nearest-neighbor-classification-scikit-learn">Source: Datacamp Scikit Learn</a>
+
+                              <p>
+                                Results: K-Nearest Neighbor performed fairly well with a recall score of 0.944. This means that the model only predicted six false negatives out of 87 combined true positives and false negatives. Although the model performed exceptionally well in having no false positives, this did not affect our recall score as recall only takes into account false negatives and true positives.
+                              </p>
+                              <iframe src="assets/img/ml_models/KNN_file.html" height = 500 width = 500>
                                 
                               </iframe>
                             </div>
                         </div>
+                   
+                    <div>
+                        
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Random Forest Classifier-->
-                        <div class="portfolio-item">
-        
-                                <div class="portfolio-hover">
-
-                                </div>
-                                <br>
-                          
-                          
-                          
-                          
-                            </a>
-                            <div class="portfolio-caption">
-                                <h6>Random Forest Classifier</h6>
-                                <div class="portfolio-caption-subheading text-muted">Our third best model, the Random Forest Classifier, is an algorithm that is a meta estimator that takes a certain number of decision tree classifiers onto various sub\-samples of a data set, and uses the mean of the results to determine and improve predictive accuracy.</div>
-                              <iframe src = 'rfc_fig.html' height = 500 width = 500>
-                              </iframe>
-</div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
-        <!-- Conclusd-->
+        <!-- Conclusion-->
       
       
         <section class="page-section" id="conclusion">
@@ -225,13 +291,13 @@ basically means it prepares the data for the algorithm by assigning the categori
                         
                   
                     
-Ultimately, we have narrowed down the most effective model to be the Extreme Gradient Boost. We based the effectiveness of our models on recall, which scores a model based on the amount of false negatives and true positives. (Formula: TP / (TP + FN) ) We used recall because it’s vital that the model we use minimizes the amount of false negatives, which could leave potential users of our website with a false sense of security.  Extreme Gradient Boost was most accurate in terms of recall with a score of 0.972. Other similar “runner up models” scored 0.944 (K-Nearest Neighbor) and 0.963 (Random Forest Classifier) respectively. The majority of models afterwards had scores hovering around 0.95 and lower. 
+Ultimately, we have narrowed down the most effective model to be the Extreme Gradient Boost. We based the effectiveness of our models on recall, which scores a model based on the amount of false negatives (FN) and true positives (TP). (Formula: TP / (TP + FN) ) We used recall because it’s vital that the model we use minimizes the amount of false negatives, which could leave potential users of our website with a false sense of security.  Extreme Gradient Boost was most accurate in terms of recall with a score of 0.972. Other similar “runner up models” scored 0.944 (K-Nearest Neighbor) and 0.963 (Random Forest Classifier) respectively. The majority of models afterwards had scores hovering around 0.95 and lower.
 </p>
                 
 
                     
                     
-                    <h3 class ="my-3"> Significance and Extensions</h3>
+                    <h2 class ="my-3 text-uppercase"> Significance and Extensions</h3>
                     <div class = "text-center">
                       
                      
@@ -242,7 +308,7 @@ Ultimately, we have narrowed down the most effective model to be the Extreme Gra
                       
                     <div class = "text-center">
                     <p class = "text-muted">
-                      While our project works to give accurate predictions most of the time, we can definitely improve our predictions by feeding more datasets in for machine learning. That way, with even more data to cross-examine, it can be as accurate as possible with minimal to no false positives or false negatives. It’s a lot more important to eliminate false negatives overall, though, because telling someone they don’t have heart disease may lead to their disease getting worse. 
+                      While our project works to give accurate predictions most of the time, we can definitely improve our predictions by feeding more datasets in for machine learning. That way, with even more data to cross-examine, it can be as accurate as possible with minimal to no false positives or false negatives. It’s a lot more important to eliminate false negatives overall, though, because telling someone they don’t have heart disease may lead to their disease getting worse.
                     </p>
                      </div>
                     
@@ -311,7 +377,7 @@ Ultimately, we have narrowed down the most effective model to be the Extreme Gra
                     </div>
                    <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class ="img-fluid" src="assets/img/team/evan.png" alt="..." />
                             <h4>Evan Nguyen</h4>
                             <p class="text-muted">Lead Marketer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -321,7 +387,7 @@ Ultimately, we have narrowed down the most effective model to be the Extreme Gra
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">"Alone we can do so little; together we can do so much." - Helen Keller</p></div>
                 </div>
             </div>
         </section>
@@ -419,7 +485,7 @@ Ultimately, we have narrowed down the most effective model to be the Extreme Gra
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><ss="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                     </div>
-                </div>i class="fab fa-linkedin-in"></i></a>
+                </div></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a cla
