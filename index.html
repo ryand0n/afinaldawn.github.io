@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Heart Disease Prediction</title>
+        <title>Diabetes Detection</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -29,8 +29,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#introduction">Pre-Processing</a></li>
                         <li class="nav-item"><a class="nav-link" href="#visualizations">Visualizations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#conclusion">Results/Conclusion</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#conclusion">Significance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#models">Models</a></li>
+                         <li class="nav-item"><a class="nav-link"href="#conclusion">Results/Conclusion</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -41,40 +41,41 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">The Electric Pythons</div>
-                <div class="masthead-heading text-uppercase">Heart Disease AI</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#introduction">Learn More</a>
+                <div class="masthead-heading text-uppercase">Diabetes Detection!</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#introduction">Explore!</a>
             </div>
         </header>
         <!-- Services-->
         <section class="page-section" id="introduction">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Pre-Processing</h2>
+                    <h2 class="section-heading text-uppercase">Pre-Processing/EDA</h2>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-heart-crack fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Our Motivation</h4>
-                        <p class="text-muted">With heart disease being the leading cause of death in the United States and the costs of healthcare increasing, we wanted to provide people with an easy-to-use and reliable resource to check whether they are at risk of having heart disease.</p>
+                        <h4 class="my-3">Why This Product?</h4>
+                        <p class="text-muted">We are attempting to solve some financial issues involving healthcare. Healthcare in America can be extremely expensive. Per year it costs a single person around $12,500.00 per year in health alone. Our model will allow an individual to check whether they are positive or negative for diabetes before they decide to spend a good amount of their money to have a doctor confirm or deny their result. </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-binoculars fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-broom fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Exploration</h4>
-                        <p class="text-muted">A critical part in building this machine learning algorithm was obtaining a dataset that contained viable and useful information that we could input as part of a teaching set for artificial intelligence. Having accurate predictions is essential for the algorithm to have any possible use, so a dataset was found that contained medical records from patients with and without heart disease, without missing data.However, like most datasets, this one contained some outliers from the rest of the information contained, which when implemented into our algorithm, could lead to inaccurate predictions.</p>
+                        <h4 class="my-3">Data Cleansing</h4>
+                        <p class="text-muted">Cleaning up our data allows us to make sure our Machine Learning Model is the most accurate it can be. We can do this by visualizing our data in different ways to find different correlations between features/symptoms. </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-check-circle fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Our Steps</h4>
-                        <p class="text-muted"> So, to help avoid the possibility of inaccurate predictions, we removed data that fell below the first quartile of that particular variable, and any data that exceeded the third quartile to remove any outliers. Standard scaling was also introduced to control the distribution of data so that it had a standard deviation of one. From this data conclusions could be drawn about what typical states of the body would most likely lead to the possibility of contracting this disease.</p>
+                        <h4 class="my-3">Minimum Viable Product</h4>
+                        <p class="text-muted">Our project MVP would be a website with a form that a user would fill out. The user would input their gender and possible diabetic symptoms. The results would be an output showing if they are positive or negative for diabetes. Included throughout our website are several visuals including a Heat map, Histogram, Pie Chart, and Bar Chart to display the data we have collected for our Machine Learning Model.  
+</p>
                     </div>
                   
    
@@ -86,7 +87,7 @@
           <style>
             h6{
               font-weight:bold;
-              color: green; 
+              color: mediumturquoise; 
               font-size: 20px; 
             }
           
@@ -107,26 +108,24 @@
 
                                 </div>
                               <div class="portfolio-caption-heading">
-                                <h6>
-                                    Histogram Grid of Factors in Heart Disease
-                                </h6>
+                                       <div class="text-center">
+                                <h5>
+                                            Histogram Grid of Factors in Diabetes
+                                 
+                                </h5>
                               
                           
                           </div>
-<!--                           <iframe src="" height = "500" width = "500" frameBorder = 0></iframe> -->
-                                <img class="img-fluid" src="assets/img/Histofig.jpg" height = "500" width = "1000" alt="..." />
+<!--                           <iframe src="assets/img/team/histograms.html" height = "500" width = "500" frameBorder = 0></iframe> -->
+                                <iframe src="assets/img/histograms.html" height = '500' width = '100%' frameBorder = 0></iframe>
                           
                             </a>
                             <div class="portfolio-caption">
+                                     <div class="text-center">
                                 <p>
 
-                                In our data, the histogram for thalach, which is the person's maximum heart rate achieved, seems to show that a thalach level of 150 differentiates a person with heart disease and a person without it. <br>
-For oldpeak, there is a spike of people with heart disease when their oldpeak level is 0. As oldpeak level increases, the amount of people with heart disease drastically decreases in a negative association. <br>
-For our age histogram, the data shows that people in their early forties and fifties have the highest frequency of heart disease, with a bimodal peak. <br>
-The sex histogram shows that females are at a greater risk of contracting heart disease compared to men. Despite there being a lower sample number in the dataset, the amount of females affected are almost as high as men. <br>
-Our ca histogram shows that people with 0 major vessels infected are at the highest risk of getting heart disease.<br>
-Our slope histogram shows that at a slope of level 2, there is a high amount of people with heart disease. <br>
-                                  There is also a positive association in which as slope level increase, so do the amount of people that have heart disease. </p>
+                   
+                                  This Histogram shows how many of each feature are included in either positive or negative class. The two different classes are shown as  “yes” or “no”.  </p>
                             </div>
                         </div>
                     </div>
@@ -137,21 +136,19 @@ Our slope histogram shows that at a slope of level 2, there is a high amount of 
                               
 <hr size='1'/>
   <div class="portfolio-hover">
+           <div class="text-center">
                             
-                                </div>
-                          <div class="portfolio-caption-heading">
-                            <h6>
-                              
-                    
-                            Scatterplot Matrix of Correlations
-                            </h6>
+                                <h5> 
+                            Bar Chart Showing Correlation
+                            </h5>
                           </div>
-                          <iframe src="assets/img/ml_models/ScatterplotsVisualizations.html" height = '500' width = '100%' frameBorder = 0></iframe>
+                          <iframe src="assets/img/bar.html" height = '500' width = '100%' frameBorder = 0></iframe>
                             </a>
                             <div class="portfolio-caption">
                               <div class="portfolio-caption-heading">
+                                       <div class="text-center">
                                 <p>
-                                  We used a matrix scatter plot to compare variables we thought were most directly correlated to changes in heart disease. We colored the graphs to differentiate between people who did (yellow) and did not (blue) have heart disease. The age and thalach appear to have a negative correlation to each other; age is mostly spread out, but those with higher heart rates tend to have heart disease. The old peak and age do not have much correlation, people with heart disease tend to have lower old peak measurements. The thalach and old peak do not have much correlation, people with heart disease tend to have lower old peak measurements.
+                                  This Bar Chart shows the correlation of each symptom to the class. A high correlation will help lead to accurate results in our machine learning but if the correlation is low it could affect the results to be false. 
                                 </p>
                               </div>
                       
@@ -171,22 +168,45 @@ Our slope histogram shows that at a slope of level 2, there is a high amount of 
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">
+                                         <div class="text-center">
                                   
-                                  <h6>
-                                    Heatmap Correlation of Factors in Heart Disease
-                                  </h6>
+                                  <h5>
+                                    Heatmap Correlation of Factors in Diabetes
+                                  </h5>
                               
                               </div>
-                              <iframe src = "assets/img/ml_models/Heatmap.html" height = '500' width = '1000' frameBorder = 0>
+                              <iframe src = "assets/img/heatmap.html" height = '500' width = '100%' frameBorder = 0>
         
       </iframe> 
                               <div class="portfolio-caption">
                                <div class="portfolio-caption-heading">
+                                        <div class="text-center">
                              <p>
                                
                                  
-                                  The reason we're using a heatmap made by Plotly to portray the factors of heart disease is because it displays the data in an easy-to-digest way. The color scale tells a reader what factors are correlated with each other and with heart disease, making it easier to find what the problem is. Our goal is to spread awareness about heart disease and help people identify if they may be at a higher risk for heart disease, and understanding the factors and correlations are one step to do that. The most important column to look at is the last one as it indicates the correlation between heart disease and other factors such as chest pain. The closer the number is to 1 or -1, the higher positive or negative correlation between the variables.
-The most positively correlated variables to people with heart disease are chest pain, thalach (max heart rate), and slope of peak exercise in ST segments. This shows that chest pain can be a sign of heart disease, and heart rate and exercise also play a big part. The most negatively correlated variables to people with heart disease are ST depression and the number of major vessels colored by flouroscopy. Some variables that should be disregarded are thalassemia, sex, and exercise induced angina because of their fixed numerical representations (e.g. male = 1 and female = 0 ) that do not translate well on a graph/heat map when compared with other values. 
+                                  Another graph we used to show our data was a heatmap. This heatmap shows how each feature affects the other. The most important one is class. The class is the outcome of our machine learning. It can either show positive or negative for diabetes. The class is compared with the 16 other features to see which symptoms we want to use in our Machine Learning Models 
+                               
+                                      <div class="text-center">
+                               <h5>
+                                    Pie Chart Correlation of Factors in Diabetes
+                                  </h5>
+                              
+                              </div>
+                              <iframe src = "assets/img/PIE2.html" height = '500' width = '100%' frameBorder = 0>
+        
+      </iframe> 
+                                                 <div class="text-center">
+                                
+The following Pie Charts represent the correlation between the 9 different symptoms including Gender, and diabetes. 
+The red section (1) is the percentage of people that have diabetes with a particular symptom.
+The dark blue section (0) is the percentage of people that don’t have diabetes, but do have a symptom. 
+
+                                
+                                
+                              <div class="portfolio-caption">
+                               <div class="portfolio-caption-heading">
+                                        <div class="text-center">
+                             <p>
                                  </p>
                                  <br>
                              </div>
@@ -196,13 +216,18 @@ The most positively correlated variables to people with heart disease are chest 
                             </div>
                         </div>
                     </div>
+                                 <section class="page-section bg-light" id="models">
                     <div>
-                      <div class="container">
+                        <div class="container">
+                      <div class="text-center">
+                    <h1 class="section-heading text-uppercase">Models</h1>
+                    
+                    
                 <div class="text-center">
                     <h2 class="section-subheading text-muted">Machine Learning Confusion Matrices</h2>
                   <br>
                 </div>
-                        <!-- Extreme Gradient Boosting-->
+                        <!-- -->
                         <div class="portfolio-item">
                          
                                 <div class="portfolio-hover">
@@ -211,18 +236,34 @@ The most positively correlated variables to people with heart disease are chest 
                             
                             </a>
                             <div class="portfolio-caption">
-                                <h6>Extreme Gradient Boosting</h6>
-                                <p>Our best model, Extreme Gradient Boosting, or EGB, is a supervised machine learning program that combines many other models, often times weaker models, into its own highly accurate model. EGB is similar to random forest and decision tree models, in the way that each of the models making up EGB makes 1 big tree model with thousands of trees. EGB converts all categorical data into one-hot encoding, which basically means it prepares the data for the algorithm by assigning the categories 1s and 0s.</p>
-                              <img src = "assets/img/ml_models/xgb_ex_vis.png" height = 250 width = 650>
+                                <h5>Decision Trees</h5>
+                                <p>Decision Trees are a non-parametric supervised learning method used for classification and regression. The model can predict the value of a target variable by learning simple rules. The more data, the more complex the decision rules and the fitter the model.
+</p>
+                              <img src = "assets/img/DT2.JPG" height = 500 width = 650>
                               <br>
-                              <a href = "https://towardsdatascience.com/xgboost-extreme-gradient-boosting-how-to-improve-on-regular-gradient-boosting-5c6acf66c70a">Source: Towards Data Science</a>
-                              <p>
-                                Results: Extreme Data Boosting performed extremely well with a recall score of approximately 0.972. This indicates that the model had predicted 3 false negatives out of a total of 108 true positive and false negative values. Based on the confusion matrix, you can also see that the model returned no false positives, and while that is impressive, it doesn't affect the recall score so isn't very useful in this case.
-                                <iframe src="assets/img/ml_models/xgb_cm.html" height = 500 width = 500> </iframe>
+                              <br>
+              <p>
+               The best parameters for Decision Trees were: <br> <br>
+Criterion :  gini 
+      <br>          
+Splitter :  best
+                <br> <br>
+Criterion is The function to measure the quality of a split. Splitter is the strategy used to choose the split at each node.
+
                               </p>
-                            </div>
-                        </div>
-                    </div>
+                              <h5>
+                                Decision Tree Results: 
+                              </h5>
+                              <p>
+ Recall score of approximately 1.0<br>Accuracy of 0.9649122807017544 <br> MSE of 0.03076923076923077
+                              
+                              
+                               </p>
+                              <iframe src = "assets/img/DecisionTrees.html" height = 500 width = 650>
+                              </iframe>
+</div>
+
+                                
   <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"></div>
   <!-- Random Forest Classifier-->
                         <div class="portfolio-item">
@@ -235,16 +276,36 @@ The most positively correlated variables to people with heart disease are chest 
 
                             </a>
                             <div class="portfolio-caption">
-                                <h6>Random Forest Classifier</h6>
-                                <p>Our second best model, the Random Forest Classifier, is a machine learning algorithm that is a meta estimator. The algorithm takes a certain number of decision tree classifiers that operate as an ensemble, onto various sub-samples of the data set. Each individual decision tree classifier results in a class prediction, and uses the mean of the results to determine and improve predictive accuracy. The class predictions that occurred the most times becomes the overall prediction for the model.</p>
+                                <h5>Random Forest Classifier</h5>
+                                <p>Our second best model, Random forest uses forest classifiers that have to be fitted with two arrays: a sparse or dense array X of shape, and an array Y of shape.
+
+</p>
                               <img src = "https://upload.wikimedia.org/wikipedia/commons/7/76/Random_forest_diagram_complete.png">
                               <br>
-                              <a href = "https://commons.wikimedia.org/wiki/File:Random_forest_diagram_complete.png">Source: Wikimedia</a>
-                              
-                              <p>
-                                Results: The Random Forest Classifier algorithm performed moderately well with a recall score of 0.935. This indicates it identified results truly positive or negative, whether people had heart disease or not, correctly. As seen in the confusion matrix, there were only 6 false positives and 0 false negatives, which is ideal. False negatives are particularly dangerous in medicine since they may increase or fail to decrease a person's    
+                              <a href = "https://commons.wikimedia.org/wiki/File:Random_forest_diagram_complete.png"></a>
+                               
+                                
+max_features : sqrt
+                                <br>
+n_estimators : 10
+                                <br> <br>
+
+Max Features is The number of features to consider when looking for the best split. n_estimators  is The number of trees in the forest.
+
                               </p>
-                              <iframe src = "assets/img/ml_models/rfc_fig2.html" height = 500 width = 500>
+                              <h5>
+                   Random Forest Results: 
+                              </h5>
+                              <p>
+                                                         Accuracy →  0.9615384615384616
+<br>
+MSE → 0.038461538461538464
+<br>
+Recall → 0.9625
+
+
+                              </p>
+                              <iframe src = "assets/img/RandomForest.html" height = 500 width = 500>
                               </iframe>
 </div>
                         </div>                      
@@ -259,64 +320,92 @@ The most positively correlated variables to people with heart disease are chest 
            
                             </a>
                             <div class="portfolio-caption">
-                                <h6>K Nearest Neighbor</h6>
-                                <p>Our third best model, K-Nearest Neighbor, is a supervised machine learning algorithm that can be used for classification and regression problems. When a data point is given to the algorithm, it then calculates the distance between the given point to the other data points, mostly using Euclidian distance. The nearest “neighbors" or data points to the given data point are then sorted by distance in increasing order. The data points are in either category a or b, and depending on how many are measured in each category, the majority will win and the data point being predicted will be assigned to category with the majority. The k value determines how many neighbors will be used to sort.<p>
+                                <h5>K Nearest Neighbor</h5>
+                                <p>Our third best model, KNN is an algorithm that can be used to solve both classification and regression problems. It can calculate the distance between the given point and the other points. It then sorts all the points by distance in increasing order. For classification, which is what our project is using, the point is classified by a vote of its neighbors and then assigned to the class most common among its k nearest neighbors. The K value controls balance between the values from over fitting to under fitting.
+<p>
                               <img src = "http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1531424125/KNN_final_a1mrv9.png">
                               <br>
                               <a href = "https://www.datacamp.com/tutorial/k-nearest-neighbor-classification-scikit-learn">Source: Datacamp Scikit Learn</a>
 
-                              <p>
-                                Results: K-Nearest Neighbor performed fairly well with a recall score of 0.944. This means that the model only predicted six false negatives out of 87 combined true positives and false negatives. Although the model performed exceptionally well in having no false positives, this did not affect our recall score as recall only takes into account false negatives and true positives.
+  <p>
+                 The parameters used for KNN were: <br>
+    <br>
+'n_neighbors':[3,5,7] <br>
+    'weights':('uniform', 'distance') <br>
+    'algorithm':('auto', 'ball_tree')
+<br>
+    <br>
+The best parameters for KNN were: <br>
+    <br>
+ 'algorithm': 'auto'
+    <br>
+    'n_neighbors': 3
+    <br>
+    'weights': 'distance'
+
+<h5>
+  KNN Results:
+                              </h5>                             
+                              
                               </p>
-                              <iframe src="assets/img/ml_models/KNN_file.html" height = 500 width = 500>
-                                
+                           <!--  --><!--  --><strong></strong><em></em><pre></pre><div style='text-align:justify'></div><span style='color:#ff5722'></span><span style='color:#3f51b5'></span>   <p>
+                                KNN 
+                                Accuracy →  0.9153846153846154
+
+<br>
+MSE → 0.05384615384615385
+
+<br>
+Recall → 0.9620253164556962
+
+                              </p>
+                             <iframe src = "assets/img/KNN.html" height = 500 width = 500>
                               </iframe>
+                                
+                              
+                        <div class="portfolio-caption">
+                               <div class="portfolio-caption-heading">
+                                        <div class="text-center">
+                             <p>
+                                 </p>
+                                 <br>
+                             </div>
+                              </div>
+                      </div>
+                                <div class="portfolio-caption-subheading text-muted">
                             </div>
                         </div>
-                   
-                    <div>
-                        
                     </div>
-                
-            </div>
-        </section>
-        <!-- Conclusion-->
-      
-      
-        <section class="page-section" id="conclusion">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Results and Conclusion</h2>
-                    <p class="text-muted">
-                        
-                  
-                    
-Ultimately, we have narrowed down the most effective model to be the Extreme Gradient Boost. We based the effectiveness of our models on recall, which scores a model based on the amount of false negatives (FN) and true positives (TP). (Formula: TP / (TP + FN) ) We used recall because it’s vital that the model we use minimizes the amount of false negatives, which could leave potential users of our website with a false sense of security.  Extreme Gradient Boost was most accurate in terms of recall with a score of 0.972. Other similar “runner up models” scored 0.944 (K-Nearest Neighbor) and 0.963 (Random Forest Classifier) respectively. The majority of models afterwards had scores hovering around 0.95 and lower.
-</p>
-                
-
-                    
-                    
-                    <h2 class ="my-3 text-uppercase"> Significance and Extensions</h3>
-                    <div class = "text-center">
+                    <div>
+                      <section class="page-section bg-light" id="conclusion">
+                        <div class="container">
+                      <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Conclusion</h2>
+                              
+                              </p>
+                              <img src="assets/img/TB6.JPG" height = 250 width = 700>
+              </div>
                       
-                     
-                    <p class ="text-muted"> 
-                      The machine system that we have developed will be critical in allowing a patient to be informed of their health risks and if they should seek medical assistance or not. Since our system is free to use, patients will not need to worry about the medical costs to identify their risk of heart disease, and they can take a preemptive on keeping themselves healthy - getting help first before their situation turns fatal. That is our main goal, to inform people about their health and give some information and awareness on heart disease and the factors that go into it. 
-                    </p>
-
+       <div class = "text-center">
+                    
                       
                     <div class = "text-center">
                     <p class = "text-muted">
-                      While our project works to give accurate predictions most of the time, we can definitely improve our predictions by feeding more datasets in for machine learning. That way, with even more data to cross-examine, it can be as accurate as possible with minimal to no false positives or false negatives. It’s a lot more important to eliminate false negatives overall, though, because telling someone they don’t have heart disease may lead to their disease getting worse.
-                    </p>
-                     </div>
-                    
-                    
-                  
-                  
+                     <p>
+                     
+                      </p> Making this model has come with many ups and downs, but as a team we have been able to persevere and make our product to the best of our ability. While creating the  product at hand, we have encountered many challenges, but together, we have surpassed all our expectations and created a diabetes detector with as much accuracy as possible. During the process of making the product, we have gained much knowledge about not only the process of creating a product to put on a website, but also about symptoms of diabetes. As a group, we have put so much effort into making the product as accurate as possible, so it can help people save money and time when visiting doctors.
                    
+                     </div>
+                </div>
 
+                         
+
+                    
+
+                    </div>
+                  
+   
+               
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
@@ -327,389 +416,41 @@ Ultimately, we have narrowed down the most effective model to be the Extreme Gra
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Alexandra Little</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/download.jpeg" alt="..." />
+                            <h4>Zachary Evan Shiff </h4>
+                            <p class="text-muted">Data Scientist</p>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Vicente Marroquin </h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/image2.jpeg" alt="..." />
+                            <h4>Naomi Kimora Castang </h4>
+                            <p class="text-muted">Data Scientist</p>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Hikari Gregersen</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/large_user_7015821_752.jpg" alt="..." />
+                            <h4>Sophia Lee</h4>
+                            <p class="text-muted">Data Scientist</p>
+                            
                         </div>
                     </div>
                    <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Danh Tran</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <img class="mx-auto rounded-circle" src="assets/img/C++.JPG" alt="..." />
+                            <h4>Joshua Jesiah </h4>
+                            <p class="text-muted">AI Architect</p>
+                            
                         </div>
                     </div>
-                   <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Sophia Lo</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          
                         </div>
                     </div>
-                   <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class ="img-fluid" src="assets/img/team/evan.png" alt="..." />
-                            <h4>Evan Nguyen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">"Alone we can do so little; together we can do so much." - Helen Keller</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">"These days elementary school students learn English and coding at school. Tommorow's elementary school student will AI. AI comes before English and coding. This is because Artificial Intelligence is the language and tool of the future." - Enamul Haque</p></div>
                 </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Heart Disease Predictor </h2>
-                    <h3 class="section-subheading text-muted">Please enter in your medical data. If that is not available, please enter only your age and sex.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Heart Disease Predictor 2022</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><ss="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a cla
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>U<strong></strong>use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. </p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
+
+        
